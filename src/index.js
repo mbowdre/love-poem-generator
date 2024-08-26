@@ -1,13 +1,13 @@
 function generatePoem(event) {
   event.preventDefault();
 
-  new Typewriter("#typewriter", {
-    strings: ["Hello", "World"],
+  new Typewriter("#poem", {
+    strings: "Love is like a flower",
     autoStart: true,
-    display: 1,
-    cursor: none,
+    delay: 1,
+    cursor: "",
   });
 }
 
-let poemFormElement = document.querySelector("poem-generator-form");
+let poemFormElement = document.querySelector("#poem-generator-form");
 poemFormElement.addEventListener("submit", generatePoem);
