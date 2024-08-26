@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Love Poems</title>
   </head>
   <body class="eb-garamond-uniquifier">
@@ -19,7 +20,7 @@
       </header>
 
       <main>
-        <form action="">
+        <form id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter the topic of the Love Poem"
@@ -30,11 +31,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="poem">
-          The Poem will go here
-          <br />
-          the poem will go here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
       <footer>
         This was coded by
