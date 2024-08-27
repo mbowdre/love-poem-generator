@@ -17,6 +17,10 @@ function generatePoem(event) {
     "You are a poet who writes short love poems  in basic HTML. Your goal is to write a poem no longer than 10 lines. Make sure to follow user instructions as the topic of the love poem. Do not include the 'html' in response.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class ="blink"> Loading Love poem about ${instructionsInput.value} </div>`;
+
   console.log("Generating Poem");
   console.log(`Prompt: ${prompt}`);
   console.log(`Contex: ${context}`);
