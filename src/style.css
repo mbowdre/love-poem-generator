@@ -4,13 +4,9 @@ html {
 }
 
 body {
-  background: linear-gradient(
-    179.4deg,
-    rgb(253, 240, 233) 2.2%,
-    rgb(255, 194, 203) 96.2%
-  );
-  height: 100%;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.1),
+   rgba(0, 0, 0, 0.3)), 
+  url(images/white_flower.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
